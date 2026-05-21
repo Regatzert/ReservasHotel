@@ -1,0 +1,1 @@
+INSERT INTO bookings (name, price, create_at) VALUES('Panasonic', 800, CURRENT_TIMESTAMP);
