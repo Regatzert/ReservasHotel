@@ -41,7 +41,7 @@ public class Notification {
     private String bookingReference; // Opcional, para asociar la notificación a una reserva específica
 
     @Enumerated(EnumType.STRING)
-    private NotificationType notificationType; // Enum para diferenciar tipos de notificaciones (reserva, pago, etc.)
+    private NotificationType type; // Enum para diferenciar tipos de notificaciones (reserva, pago, etc.)
 
     private final LocalDateTime createdAt = LocalDateTime.now();
 }

@@ -39,13 +39,13 @@ public class Room {
     private Integer roomNumber;
 
     @Enumerated(EnumType.STRING)
-    private RoomType roomType;
+    private RoomType type;
 
     @DecimalMin(value = "0.1", message = "Precio por noche requerido")
     private BigDecimal pricePerNight;
 
     @Min(value = 1, message = "Capacidad de habitación requerida")
-    private Integer roomCapacity;
+    private Integer capacity;
 
     private String description;
     private String imageUrl;

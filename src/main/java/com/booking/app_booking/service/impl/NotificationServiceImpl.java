@@ -39,7 +39,7 @@ public class NotificationServiceImpl implements NotificationService {
                 .subject(notificationDTO.getSubject())
                 .body(notificationDTO.getMessage())
                 .bookingReference(notificationDTO.getBookingReference())
-                .notificationType(NotificationType.EMAIL)
+                .type(NotificationType.EMAIL)
                 .build();
         notificationRepository.save(notificationToSave);
     }
