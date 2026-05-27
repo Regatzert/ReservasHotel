@@ -3,6 +3,7 @@ package com.booking.app_booking.service.impl;
 import java.io.File;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
@@ -150,11 +151,11 @@ public class RoomServiceImpl implements RoomService {
 
     @Override
     public List<RoomType> getAllRoomTypes() {
-        return roomRepository.getallRoomTypes();
+        return Arrays.asList(RoomType.values());
     }
 
     @Override
-    public Response searchRooms(String input) {
+    public Response searchRoom(String input) {
         List<Room> roomList = roomRepository.searchRooms(input);
 
         List<RoomDTO> roomDTOList = modelMapper.map(roomList, new TypeToken<List<RoomDTO>>() {}.getType());

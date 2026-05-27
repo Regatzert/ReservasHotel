@@ -18,6 +18,6 @@ public interface RoomService {
     Response deleteRoom(Long roomId);
     Response getAvailableRooms(LocalDate checkInDate, LocalDate checkOutDate, RoomType roomType);
     List<RoomType> getAllRoomTypes();
-    Response searchRooms(String input);
+    Response searchRoom(String input);
 
 }
